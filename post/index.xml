@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on SR的博客</title>
-    <link>http://www.flysnow.org/post/</link>
+    <link>http://saber0222.github.io/post/</link>
     <description>Recent content in Posts on SR的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 20 Nov 2022 12:55:18 +0800</lastBuildDate><atom:link href="http://www.flysnow.org/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 20 Nov 2022 12:55:18 +0800</lastBuildDate><atom:link href="http://saber0222.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>第一篇博客</title>
-      <link>http://www.flysnow.org/post/my-first-blog/</link>
+      <link>http://saber0222.github.io/post/my-first-blog/</link>
       <pubDate>Sun, 20 Nov 2022 12:55:18 +0800</pubDate>
       
-      <guid>http://www.flysnow.org/post/my-first-blog/</guid>
+      <guid>http://saber0222.github.io/post/my-first-blog/</guid>
       <description>这是我的第一篇博客 hello world！ 第二篇是作业，第二篇的标题下面那行为我们三个人的姓名学号 </description>
     </item>
     
