@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on SR的博客</title>
+    <link>http://www.flysnow.org/posts/</link>
+    <description>Recent content in Posts on SR的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Sun, 20 Nov 2022 13:29:14 +0800</lastBuildDate><atom:link href="http://www.flysnow.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Css基础</title>
+      <link>http://www.flysnow.org/posts/css%E5%9F%BA%E7%A1%80/</link>
+      <pubDate>Sun, 20 Nov 2022 13:29:14 +0800</pubDate>
+      
+      <guid>http://www.flysnow.org/posts/css%E5%9F%BA%E7%A1%80/</guid>
+      <description>鲍泓任2022211150 赵飞2022211146 王一丁2022211154 CSS基础 css是什么
+层叠样式表（Cascading Style Sheet，简称：CSS）是为网页添加样式的代码。
+解析css
+整个结构称为 规则集（通常简称“规则”），各部分释义如下：
+选择器（Selector） HTML 元素的名称位于规则集开始。它选择了一个或多个需要添加样式的元素（在这个例子中就是 p 元素）。要给不同元素添加样式只需要更改选择器就行了。
+声明（Declaration） 一个单独的规则，如 color: red; 用来指定添加样式元素的属性。
+属性（Properties） 改变 HTML 元素样式的途径。（本例中 color 就是 &amp;lt;p&amp;gt; 元素的属性。）CSS 中，由编写人员决定修改哪个属性以改变规则。
+属性的值（Property value） 在属性的右边，冒号后面即属性的值，它从指定属性的众多外观中选择一个值（我们除了 red 之外还有很多属性值可以用于 color ）。
+每个规则集（除了选择器的部分）都应该包含在成对的大括号里（{}）。 在每个声明里要用冒号（:）将属性与属性值分隔开。 在每个规则集里要用分号（;）将各个声明分隔开。 如果要同时修改多个属性，只需要将它们用分号隔开
+也可以选择多种类型的元素并为它们添加一组相同的样式。
+例
+CSS p, li, h1 {color: red;} 选择器
+[该类型的内容暂不支持下载]
+CSS 文档中所有位于 /* 和 */ 之间的内容都是 CSS 注释，它会被浏览器在渲染代码时忽略。 /* */ 不可嵌套 字体和文本
+第一步，找到之前 Google Font 输出的地址。并以 &amp;lt;link&amp;gt; 元素的形式添加进 index.html 文档头（ &amp;lt;head&amp;gt; 和 &amp;lt;/head&amp;gt; 之间的任意位置）。代码如下： Plaintext &amp;lt;link href=&amp;ldquo;https://fonts.</description>
+    </item>
+    
+  </channel>
+</rss>

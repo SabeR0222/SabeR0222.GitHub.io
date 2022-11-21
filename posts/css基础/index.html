@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+
+    <title>Css基础 | SR的博客</title>
+    <meta property="og:title" content="Css基础 - SR的博客">
+    <meta property="og:type" content="article">
+        
+    <meta property="article:published_time" content='2022-11-20T13:29:14&#43;08:00'>
+        
+        
+    <meta property="article:modified_time" content='2022-11-20T13:29:14&#43;08:00'>
+        
+    <meta name="Keywords" content="golang,go语言,go语言笔记,飞雪无情,java,android,博客,项目管理,python,软件架构,公众号,小程序">
+    <meta name="description" content="Css基础">
+        
+    <meta name="author" content="SR">
+    <meta property="og:url" content="http://www.flysnow.org/posts/css%E5%9F%BA%E7%A1%80/">
+    <link rel="shortcut icon" href='/favicon.ico'  type="image/x-icon">
+
+    <link rel="stylesheet" href='/css/normalize.css'>
+    <link rel="stylesheet" href='/css/style.css'>
+    <script type="text/javascript" src="//cdn.bootcdn.net/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    
+    
+    
+    
+    
+    
+</head>
+
+<body>
+    <header id="header" class="clearfix">
+    <div class="container">
+        <div class="col-group">
+            <div class="site-name ">
+                
+                    <a id="logo" href="http://www.flysnow.org">
+                        SR的博客
+                    </a>
+                
+                <p class="description">专注于IT互联网的普通大学生，意在为雏燕计划做铺垫</p>
+            </div>
+            <div>
+                <nav id="nav-menu" class="clearfix">
+                    <a class="current" href="http://www.flysnow.org">Home</a>
+                    
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <div id="body">
+        <div class="container">
+            <div class="col-group">
+
+                <div class="col-8" id="main">
+                    
+<div class="res-cons">
+    
+    <article class="post">
+        <header>
+            <h1 class="post-title">Css基础</h1>
+        </header>
+        
+  <time datetime="2022-11-20T05:29:14Z" class="post-meta meta-date dt-published">
+    2022-11-20
+  </time>
+
+
+
+        
+        
+        <div class="post-content">
+            <h2 id="鲍泓任2022211150---赵飞2022211146---王一丁2022211154">鲍泓任2022211150   赵飞2022211146   王一丁2022211154</h2>
+<ul>
+<li><strong>CSS基础</strong></li>
+</ul>
+<p><strong>css是什么</strong></p>
+<p>层叠样式表（Cascading Style Sheet，简称：CSS）是为网页添加样式的代码。</p>
+<p><strong>解析css</strong></p>
+<p>
+        <img class="mx-auto" alt="" src="media/9a3ebedb1de634b61631552bcc104214.png" />   
+    </p>
+<p>整个结构称为 规则集（通常简称“规则”），各部分释义如下：</p>
+<ul>
+<li>选择器（Selector）</li>
+</ul>
+<p>HTML 元素的名称位于规则集开始。它选择了一个或多个需要添加样式的元素（在这个例子中就是 p 元素）。要给不同元素添加样式只需要更改选择器就行了。</p>
+<ul>
+<li>声明（Declaration）</li>
+</ul>
+<p>一个单独的规则，如 color: red; 用来指定添加样式元素的属性。</p>
+<ul>
+<li>属性（Properties）</li>
+</ul>
+<p>改变 HTML 元素样式的途径。（本例中 color 就是 <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/p">&lt;p&gt;</a> 元素的属性。）CSS 中，由编写人员决定修改哪个属性以改变规则。</p>
+<ul>
+<li>属性的值（Property value）</li>
+</ul>
+<p>在属性的右边，冒号后面即属性的值，它从指定属性的众多外观中选择一个值（我们除了 red 之外还有很多属性值可以用于 color ）。</p>
+<table>
+<thead>
+<tr>
+<th>每个规则集（除了选择器的部分）都应该包含在成对的大括号里（{}）。 在每个声明里要用冒号（:）将属性与属性值分隔开。 在每个规则集里要用分号（;）将各个声明分隔开。</th>
+</tr>
+</thead>
+</table>
+<p>如果要同时修改多个属性，只需要将它们用分号隔开</p>
+<p>也可以选择多种类型的元素并为它们添加一组相同的样式。</p>
+<p>例</p>
+<table>
+<thead>
+<tr>
+<th>CSS p, li, h1 {color: red;}</th>
+</tr>
+</thead>
+</table>
+<p><strong>选择器</strong></p>
+<p>
+        <img class="mx-auto" alt="" src="media/40cb9cf53191d2ee0a45ddbf8fde62f2.png" />   
+    </p>
+<p><strong>[该类型的内容暂不支持下载]</strong></p>
+<table>
+<thead>
+<tr>
+<th>CSS 文档中所有位于 /* 和 */ 之间的内容都是 CSS 注释，它会被浏览器在渲染代码时忽略。 /* */ 不可嵌套</th>
+</tr>
+</thead>
+</table>
+<p><strong>字体和文本</strong></p>
+<ol>
+<li>第一步，找到之前 <a href="https://developer.mozilla.org/zh-CN/docs/Learn/Getting_started_with_the_web/What_will_your_website_look_like#%E5%AD%97%E4%BD%93">Google Font 输出的地址</a>。并以 <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/link">&lt;link&gt;</a> 元素的形式添加进 index.html 文档头（ <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/head">&lt;head&gt;</a> 和 &lt;/head&gt; 之间的任意位置）。代码如下：</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Plaintext  &lt;link href=&ldquo;<a href="https://fonts.font.im/css?family=Open+Sans%22">https://fonts.font.im/css?family=Open+Sans&quot;</a> rel=&ldquo;stylesheet&rdquo; type=&ldquo;text/css&rdquo;&gt;</th>
+</tr>
+</thead>
+</table>
+<ol>
+<li>以上代码为当前网页下载 Open Sans 字体，从而使自定义 CSS 中可以对 HTML 元素应用这个字体。</li>
+<li>接下来，删除 style.css 文件中已有的规则。虽然测试是成功的了，但是红字看起来并不太舒服。</li>
+<li>将下列代码添加到相应的位置，用你在 Google Fonts 找到的字体替代 font-family 中的占位行。（ font-family 意味着你想要你的文本使用的字体。）这条规则首先为整个页面设定了一个全局字体和字号（因为 &lt;html&gt; 是整个页面的父元素，而且它所有的子元素都会继承相同的 font-size 和 font-family）：</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>CSS html {/* px 表示“像素（pixels）”: 基础字号为 10 像素 */font-size: 10px;/* Google fonts 输出的 CSS */font-family: &lsquo;Open Sans&rsquo;, sans-serif;}</th>
+</tr>
+</thead>
+</table>
+<ol>
+<li>接下来为文档体内的元素（&lt;h1&gt; <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements">(en-US)</a>、&lt;li&gt; 和 <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/p">&lt;p&gt;</a>）设置字号。将标题居中显示，并为正文设置行高和字间距，从而提高页面的可读性。</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>CSS h1 {font-size: 60px;text-align: center;}p, li {font-size: 16px;/* line-height 后面可以跟不同的参数，如果是数字，就是当前字体大小乘上数字 */line-height: 2;letter-spacing: 1px;}</th>
+</tr>
+</thead>
+</table>
+<p><strong>盒子模型</strong></p>
+<ul>
+<li>padding：即内边距，围绕着内容（比如段落）的空间。</li>
+<li>border：即边框，紧接着内边距的线。</li>
+<li>margin：即外边距，围绕元素外部的空间。</li>
+<li>width ：元素的宽度</li>
+<li>background-color ：元素内容和内边距底下的颜色</li>
+<li>color ：元素内容（通常是文本）的颜色</li>
+<li>text-shadow ：为元素内的文本设置阴影</li>
+<li>display ：设置元素的显示模式（暂略）</li>
+</ul>
+<p>
+        <img class="mx-auto" alt="" src="media/e2c6a48974d9e51b129aa90af4d134cb.png" />   
+    </p>
+<p><strong>body</strong></p>
+<table>
+<thead>
+<tr>
+<th>CSS body {  width: 600px;  margin: 0 auto;  background-color: #FF9500;  padding: 0 20px 20px 20px;  border: 5px solid black; }</th>
+</tr>
+</thead>
+</table>
+<ul>
+<li>width: 600px; —— 强制页面永远保持 600 像素宽。</li>
+<li>margin: 0 auto; —— 为 margin 或 padding 等属性设置两个值时，第一个值代表元素的上方和下方（在这个例子中设置为 0），而第二个值代表左边和右边（在这里，auto 是一个特殊的值，意思是水平方向上左右对称）。你也可以使用一个，三个或四个值，参考 <a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/margin#%E5%8F%96%E5%80%BC">这里</a> 。</li>
+<li>background-color: #FF9500; —— 如前文所述，指定元素的背景颜色。我们给 body 用了一种略微偏红的橘色以与深蓝色的 <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/html">&lt;html&gt;</a> 元素形成反差，你也可以尝试其它颜色。</li>
+<li>padding: 0 20px 20px 20px; —— 我们给内边距设置了四个值来让内容四周产生一点空间。这一次我们不设置上方的内边距，设置右边，下方，左边的内边距为 20 像素。值以上、右、下、左的顺序排列。</li>
+<li>border: 5px solid black; —— 直接为 body 设置 5 像素的黑色实线边框。</li>
+</ul>
+<p><strong>h1</strong></p>
+<table>
+<thead>
+<tr>
+<th>CSS h1 { margin: 0;/*去除默认样式*/ padding: 20px 0; color: #00539F; text-shadow: 3px 3px 1px black; }</th>
+</tr>
+</thead>
+</table>
+<p>text-shadow</p>
+<ul>
+<li>第一个值设置水平偏移值 —— 即阴影右移的像素数（负值左移）。</li>
+<li>第二个值设置垂直偏移值 —— 即阴影下移的像素数（负值上移）。</li>
+<li>第三个值设置阴影的模糊半径 —— 值越大产生的阴影越模糊。</li>
+<li>第四个值设置阴影的基色。</li>
+</ul>
+<p><strong>Img</strong></p>
+<table>
+<thead>
+<tr>
+<th>CSS img {display: block; margin: 0 auto;}</th>
+</tr>
+</thead>
+</table>
+<p>可以复用 body 的 margin: 0 auto ，但是需要一点点调整。 <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/body">&lt;body&gt;</a> 元素是块级元素，意味着它占据了页面的空间并且能够赋予外边距和其他改变间距的值。而图片是内联元素，不具备块级元素的一些功能。所以为了使图像有外边距，我们必须使用 display: block 给予其块级行为。</p>
+
+        </div>
+
+        
+
+
+        
+
+<div class="post-archive">
+    <h2>See Also</h2>
+    <ul class="listing">
+        
+        <li><a href="/post/my-first-blog/">第一篇博客</a></li>
+        
+    </ul>
+</div>
+
+
+        <div class="post-meta meta-tags">
+            
+            No tags
+            
+        </div>
+    </article>
+    
+    
+
+    
+    
+    
+    
+
+</div>
+
+                    <footer id="footer">
+    <div>
+        &copy; 2022 <a href="http://www.flysnow.org">SR的博客 By SR</a>
+        
+    </div>
+    <br />
+    <div>
+        <div class="github-badge">
+            <a href="https://gohugo.io/" target="_black" rel="nofollow"><span class="badge-subject">Powered by</span><span class="badge-value bg-blue">Hugo</span></a>
+        </div>
+        <div class="github-badge">
+            <a href="https://www.flysnow.org/" target="_black"><span class="badge-subject">Design by</span><span class="badge-value bg-brightgreen">飞雪无情</span></a>
+        </div>
+        <div class="github-badge">
+            <a href="https://github.com/flysnow-org/maupassant-hugo" target="_black"><span class="badge-subject">Theme</span><span class="badge-value bg-yellowgreen">Maupassant</span></a>
+        </div>
+    </div>
+</footer>
+
+
+    
+    
+    <script type="text/javascript">
+        window.MathJax = {
+            tex2jax: {
+                inlineMath: [['$', '$']],
+                processEscapes: true
+                }
+            };
+    </script>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+
+<a id="rocket" href="#top"></a>
+<script type="text/javascript" src='/js/totop.js?v=0.0.0' async=""></script>
+<style type="text/css">
+div.highlight {
+    position: relative;
+    margin: 1em 0px;
+}
+
+.copy-code {
+    display: none;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    color: rgba(255, 255, 255, 0.8);
+    background: rgba(78, 78, 78, 0.8);
+    border-radius: var(--radius);
+    padding: 0 5px;
+    font: inherit;
+    user-select: none;
+    cursor: pointer;
+    border: 0;
+    --radius: 8px;
+}
+
+div.highlight:hover .copy-code,pre:hover .copy-code {
+    display: block;
+}
+
+</style>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+
+
+
+
+
+                </div>
+
+                <div id="secondary">
+    <section class="widget">
+        <form id="search" action='//www.google.com/search' method="get" accept-charset="utf-8" target="_blank" _lpchecked="1">
+      
+      <input type="text" name="q" maxlength="20" placeholder="Search">
+      <input type="hidden" name="sitesearch" value="http://www.flysnow.org">
+      <button type="submit" class="submit icon-search"></button>
+</form>
+    </section>
+
+    <section class="widget">
+        <h3 class="widget-title">Latest articles</h3>
+<ul class="widget-list">
+    
+    <li>
+        <a href="http://www.flysnow.org/posts/css%E5%9F%BA%E7%A1%80/" title="Css基础" target="_blank">Css基础</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/post/my-first-blog/" title="第一篇博客" target="_blank">第一篇博客</a>
+    </li>
+    
+</ul>
+    </section>
+
+    
+
+    <section class="widget">
+        <h3 class="widget-title"><a href='/categories/'>Categories</a></h3>
+<ul class="widget-list">
+    
+</ul>
+    </section>
+
+    <section class="widget">
+        <h3 class="widget-title"><a href='/tags/'>Tags</a></h3>
+<div class="tagcloud">
+    
+</div>
+    </section>
+
+    
+
+    <section class="widget">
+        <h3 class="widget-title">Meta</h3>
+        <ul class="widget-list">
+            <li><a href="http://www.flysnow.org/index.xml">RSS</a></li>
+        </ul>
+    </section>
+</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
